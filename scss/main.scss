@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    /*home*/
+    .navbar-nav {
+        &a:hover {
+        background-color: black;}
+    }
+    
+    .navbar-brand {
+       &img {
+        height:120px;
+        width:150px;}
+    }
+    
+    .menusuperior ul {
+        list-style: none;
+        font-size: 0;
+        padding: 0;}
+    
+    .menusuperior li {
+        display:inline-block;
+        width: 20%;
+        position:relative}
+    
+    .menusuperior ul ul {
+        width: auto;
+        position: absolute; /*con esta funcion este elemento se ubica dentro del elemento padre li, poniendo position:relative*/
+        display: none;} /*oculta a los elementos li carrocerias, acoplados, trailers de la primer vista del menu*/
+    
+    .menusuperior ul ul li {
+        display:inline;}
+    
+    .menusuperior a {
+        font-size: 17px;
+        text-align: center;
+        display: block;
+        color: white;
+        padding: 0px; /*el padding crea espacio dentro de un elemento o bloque, el marggin lo hace fuera de este*/
+        text-transform:uppercase;
+        text-decoration: none;
+        font-family: sans-serif;}
+        
+    .menusuperior a:hover {
+        background-color: rgb(65, 64, 64)}
+    
+    .menusuperior ul li:hover ul a:hover {
+        background-color: rgb(65, 64, 64)}
+           
+    .menusuperior ul li:hover ul {
+        display: block;} /*me muestra los elementos li corrocerias, acoplados, trailer en el menu productos*/
+    
+        
+    .botonwhatsapp .botonwsp { 
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 50px;
+        height: auto;
+        z-index: 1;
+        border-radius: 50px;}
+    
+    .piedepagina {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-image: url(../imagen/foter1.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 10vh;
+    /*background: linear-gradient(black, grey, white);*/}
+    
+    .piedepagina .logoinferior {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:200px;
+        height: 80px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 5px black;
+        margin: 10px auto;}
+    
+    .piedepagina .parrafoinferior {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        padding: 10px;
+        text-decoration:overline;
+        text-shadow: 0.1em 0.1em #333;}
+    
+    .parrafoinferior .derechos {
+        color: #f5f0f0;
+        font-size: 15px;}
+    
+    
+    
+    
+    
+    
+    /*archivo Nosotros*/
+    .contenedornosotros {
+        background-image: url(./imagen/imagendefondo.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 60vh;}  
+    
+     .logonosotrosproductostrabajoscontacto {
+         display: flex;
+         justify-content: center;
+         align-items: center;}
+    
+     .logonosotrosproductostrabajoscontacto img {
+        height:150px;
+        width:150px;
+        margin: 5px;}
+    
+    
+    
+    .descripcionnosotros {
+        text-align: center;
+        text-shadow: 0px 10px 5px rgb(31, 30, 30);
+        color: black;
+        font-size: 25px;
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+        left: 50%;
+        font-family:cursive;}
+    
+     
+    
+    
+    /*Quienes somos, vision, mision, valores*/
+    .contenido {
+        font-size: 14px;
+        font-family: poppins, sans-serif;
+        color: #666;
+        line-height: 20px;
+        padding: 20px 20px;
+        text-align: justify;}
+    
+    .left {
+        float: left;
+        width: 50%;}
+    
+    .right {
+        float: right;
+        width: 50%;}
+    
+    .left .contenido {
+        border-right: 5px solid #4bb495;}
+    
+    .contenido h2 {
+        font-size: 20px;
+        color: green;
+        padding: 20px 20px;}    
+    
+    
+    
+    
+    
+    /*archivo productos*/
+    
+    .sectionproductos {
+        background-image: url(./imagen/imagendefondo1.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: auto;}
+    
+    .containercarrocerias  {
+        width: 300px; /*son los px que tiennen la imagen, modificar luego la imagen a 500px por ej y cambiar aqui*/
+        height: auto;
+        margin: 50px auto 0;
+        overflow: hidden;}
+    
+    .containeracoplados  {
+        width: 300px; /*son los px que tiennen la imagen, modificar luego la imagen a 500px por ej y cambiar aqui*/
+        height: auto;
+        margin: 50px auto 0;
+        overflow: hidden;}
+    
+    .containertrailer  {
+        width: 300px; /*son los px que tiennen la imagen, modificar luego la imagen a 500px por ej y cambiar aqui*/
+        height: auto;
+        margin: 50px auto 0;
+        overflow: hidden;}
+    
+    .containercarrocerias ul {
+        display: flex;
+        padding: 0;
+        width: 1000%;
+        animation: slide 40s infinite linear;}
+    
+    .containeracoplados ul {
+        display: flex;
+        padding: 0;
+        width: 1000%;
+        animation: slide 40s infinite linear;}    
+    
+    .containertrailer ul {
+        display: flex;
+        padding: 0;
+        width: 1000%;
+        animation: slide 40s infinite linear;}
+    
+    .containercarrocerias li  {
+        list-style: none;
+        width: 100%;}
+    
+    .containeracoplados li {
+        list-style: none;
+        width: 100%;}
+    
+    .containertrailer li {
+        list-style: none;
+        width: 100%;}
+    
+    .containercarrocerias img  {
+        width: 100%;}
+    
+    .containeracoplados img {
+        width: 100%;}
+    
+    .containertrailer img {
+        width: 100%;}
+    
+    @keyframes slide {
+           0% {margin-left: 0%;}
+           5% {margin-left: 0%;}
+    
+           10% {margin-left: -100%;}
+           15% {margin-left: -100%;}
+    
+           20% {margin-left: -200%;}
+           25% {margin-left: -200%;}
+    
+           30% {margin-left: -300%;}
+           35% {margin-left: -300%;}
+    
+           40% {margin-left: -400%;}
+           45% {margin-left: -400%;}
+           
+           50% {margin-left: -500%;}
+           55% {margin-left: -500%;}
+           
+           60% {margin-left: -600%;}
+           65% {margin-left: -600%;}
+           
+           70% {margin-left: -700%;}
+           75% {margin-left: -700%;}
+    
+           80% {margin-left: -800%;}
+           85% {margin-left: -800%;}
+    
+           90% {margin-left: -900%;}
+           95% {margin-left: -900%;}}
+    
+    
+    
+    
+    
+    .descripcioncarrocerias h2 {
+        color:white;
+        padding: 10px 20px;}
+    
+    .descripcionacoplados h2 {
+        color:white;
+        padding: 10px 20px;}
+     
+    .descripciontrailer h2 {
+        color:white;
+        padding: 10px 20px;}    
+    
+    table {
+        font-family:Arial, Helvetica, sans-serif, sans-serif;
+        border-collapse:separate;
+        border-spacing: 10px 3px;
+        width: 80%;
+        color: white;}
+          
+    td, th {
+        border: 2px solid #f5f0f0;
+        text-align: left;
+        padding: 8px;
+        margin: 10px;}
+          
+    tr:nth-child(even) {
+        background-color: #070707;}
+    
+    .productoscarrocerias{
+        padding: 300px 100px;}
+    .productosacoplados {
+        padding: 400px 100px;}
+    .productostrailer {
+        padding: 150px 100px;}
+    
+    
+    
+    
+    
+    /*archivo trabajos*/
+    .contenedortrabajos  {
+        background-image: url(./imagen/imagendefondo1.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 50vh;} 
+    
+    .descripciontrabajos h2 {
+        font-size: 40px;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        font-family: sans-serif;
+        background-color: rgba(219, 214, 214, 0.925);
+        margin: 5px;}  
+    
+    .descripciontrabajos p {
+        font-size: 25px;
+        font-family: poppins, sans-serif;
+        text-align: justify;
+        padding: 20px 20px;
+        line-height: 40px;
+        background-color: rgba(219, 214, 214, 0.925);
+        margin: 5px} 
+    
+     /*ver como adaptarlo a mobile*/   
+    .container {
+        background-color: rgba(219, 214, 214, 0.925);
+        width: auto;
+        height: auto;
+        margin: 50px 0px 20px 0px;
+        display:flex;
+        justify-content: center;
+        align-items: center;}
+    
+    .boxtrabajos{
+        display: flex;
+        width: auto;
+        min-height: 60vh;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 20px;
+        box-shadow: 0px 15px 10px rgb(17, 17, 17);}
+    
+        
+    .box {
+        position: relative;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: animate 20s linear infinite;}
+    
+    @keyframes animate{
+        0%{
+            transform: perspective(3000px) rotateY(0deg);}
+        100%{
+            transform: perspective(3000px) rotateY(360deg);}}
+    
+    .box span {
+        position: absolute;
+        width: 50%;
+        top: 0;
+        left: 0;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        object-fit: cover;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);}
+    
+    /*ver como adaptarlo a mobile*/
+    
+    
+    /* archivo contacto*/
+    .contenedorcontacto  {
+        background-image: url(./imagen/imagendefondo1.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 50vh;} 
+    
+    .contacto {
+        width: auto;
+        height: 400px;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*es igual a poner 50% 50% del total de 100% padre*/
+        grid-template-rows: auto auto;}
+       
+    .contacto .telefono {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px;
+        background-color: gray;}
+    
+    .contacto .email {
+        color: white;
+        background-color: black;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;}
+     
+    .contacto h1 {
+        font-family:'Times New Roman', Times, serif;
+        margin: 50px;}
+    
+    .ubicacion h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-family: poppins sans-serif;
+        color: rgba(21, 22, 21, 0.836);}
+    
+    .imagenubicacion img {
+        width: 100%;
+        min-height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 15px 10px rgb(17, 17, 17);}
+    
+    .formularios {
+        background-color: rgb(189, 140, 140);
+        margin: 10px;}
+    
+    .formularios h1 {
+        margin: 20px;
+        text-align: center;
+        font-size: 30px;
+        font-family: poppins sans-serif;
+        color: rgba(21, 22, 21, 0.836);}
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;}
+    
+    form input {
+        border: 1px solid;
+        border-radius: 4px;} 
+    
+    input[type=radio] {             /*para quitar el boton de siguiente*/
+        display: none;} 
+    
+    
+    
+    
+    
+     @media screen and (max-width: 800px){
+         .piedepagina {
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5px;}
+     
+         .menusuperior {
+            width: 50%;
+            height: 20%;
+            background-color:black;}
+     
+         .menusuperior ul li {
+            display: block;
+            float: none;
+            border-bottom: 1px solid rgba(243, 239, 239, 0.3);
+            padding: 10px 0px 0px 5px;} 
+    
+        .descripcionnosotros {
+            top: 70%;}
+    
+        .contenedornosotros {
+            min-height: 100vh;}}
+    
+    
+    @media screen and (max-width: 430px){
+        .contacto {
+            width: 100%;
+            grid-template-columns: 1fr;}
+        
+         .contenido h2 {
+           font-size: 20px;
+           color: green;
+           padding: 20px 0px;}
+    
+        .containercarrocerias  {
+            width: auto; 
+            height: auto;}
+        
+        .containeracoplados  {
+            width: auto; 
+            height: auto;}
+        
+        .containertrailer  {
+            width: auto; 
+            height: auto;}
+    
+        .navbar-brand img {
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 5px rgb(66, 63, 63);}
+      
+        .piedepagina .logoinferior {
+            height: 50px;
+            width:100px;
+            box-shadow: 0px 5px 5px rgb(231, 228, 228);
+            border-radius: 10px;}
+    
+        .piedepagina .parrafoinferior {
+            padding: 0px;
+            font-size: 10px;}
+                
+        .parrafoinferior .derechos {
+            font-size: 10px;}}
+        
+    
